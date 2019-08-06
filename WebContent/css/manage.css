@@ -1,0 +1,82 @@
+
+/*搜素框*/
+.search-dialog {
+	height: 40px;
+	width:50%;
+	margin:20px auto;
+	border: 1px solid #3893C7;
+	border-radius: -moz-calc(3px);
+}
+
+.search-dialog i {
+	float:left;
+	width: 40px;
+	height: 40px;
+	background: url(../img/search.png) no-repeat center center;
+}
+
+.search-dialog input[type=text]{
+	height: 38px;
+	line-height: 40px;
+	width: 300px;
+	margin-left: 40px;
+	background-color: transparent;
+	font-size: 16px;
+	border: 0px solid black;
+}
+
+.search-dialog input:last-child {
+	background-color: #3893C7;
+	border: 0px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 24px;
+	cursor: pointer;
+	color: #FFF;
+	position: absolute;
+	right:207px;
+}
+
+.search-dialog input:last-child:active {
+	background-color: #5874BB;
+}
+
+/*表格*/
+
+.show-table {
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.show-table tr:first-child td+td {
+	border-left: 1px solid gray;
+	height: 35px;
+	font-weight: bold;
+}
+
+.show-table tr:nth-child(odd) {
+	background-color: #F1F8FE;
+}
+
+.show-table tr:nth-child(even) {
+	background-color: #DDEEF6;
+}
+
+.show-table tr:hover {
+	background-color: gainsboro;
+}
+
+.show-table tr:first-child {
+	color:#FFF;
+	background-color: #189AD6;
+}
+
+.show-table a:hover {
+	text-decoration: none;
+}
+
+.show-table a:last-child {
+	padding-left: 5px;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;word-break:break-all;word-wrap: break-word; font-family:"Microsoft Yahei", Verdana, Arial, Helvetica, sans-serif;}
+a{color:#185697;text-decoration:none;}
+a:hover {text-decoration:none;color:#f30;}
+Img{border:0;vertical-align:middle;}
+ul{list-style-type:none;}
+body{font-size:12px; line-height:22px;color:#333;}
+.page{width:980px; margin:0 auto; height:70px;position:relative; }
+.page5{width:980px; margin:0 auto; position:relative;}
+.login{padding:20px;background:#fff; }.login td{padding:6px 3px;}
+
+
+#logo{position:absolute;left:0;top:12px;}
+#logo a{display:block;}
+.banner{background:#358edd url(../img/banner.jpg) repeat-x top;}
+.width{width:100%; margin:0 auto; position:relative; height:70px; }
+.topxx{ text-align:right; height:24px;color:#fff; padding:5px 4px 5px 0; letter-spacing:3px; font-size:11px;}
+.topxx a{color:#fff; margin-left:5px; text-decoration:underline;}
+.blog_nav{overflow:hidden; _zoom:1; height:29px; line-height:29px; font-size:13px; margin-top:5px; width:800px; position:absolute; bottom:0; left:177px;}
+.blog_nav ul{padding-left:10px;}
+.blog_nav ul li{float:left; text-align:center;width:90px; letter-spacing:2px; margin-right:8px; background:url(../img/sns_top_nav_bg.png) repeat-x;border:1px #6fb0e9 solid; border-bottom:none;}
+.blog_nav ul li a{color:#fff;display:block;}
+
+.box{overflow:hidden; _zoom:1;}
+.mtop{margin-top:10px;}
+.leftbox{width:140px; float:left;}
+.rightbox{ margin-left:155px; min-height:500px; _height:500px;}
+.footer{border-top:1px #ddd solid; text-align:center; padding:10px; line-height:26px; margin-top:0;}
+.footer a{padding:0 5px;}

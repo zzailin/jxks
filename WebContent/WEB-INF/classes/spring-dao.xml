@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	   xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:context="http://www.springframework.org/schema/context" 
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	   http://www.springframework.org/schema/context 
+	   http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	   ">
+	  
+	 <!-- 初始化hibernate -->  
+	 <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	 	<property name="configLocation" value="classpath:hibernate.xml"></property>
+	 </bean>  
+	 <!-- 公共dao -->
+	 <bean class="dao.HibernateDao">
+	 	<property name="sessionFactory" ref="sessionFactory"></property>
+	 </bean>
+	  <!-- 事务管理器 -->
+	  <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+	  		<property name="sessionFactory" ref="sessionFactory"></property>
+	  </bean> 
+	  
+	  
+</beans>
